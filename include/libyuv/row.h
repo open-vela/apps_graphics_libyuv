@@ -920,6 +920,7 @@ struct YuvConstants {
 
 #endif
 
+#undef IS_ALIGNED
 #define IS_ALIGNED(p, a) (!((uintptr_t)(p) & ((a)-1)))
 
 #define align_buffer_64(var, size)                                         \
